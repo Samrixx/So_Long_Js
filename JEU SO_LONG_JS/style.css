@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d2d2d;  /* Fond sombre */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f8f8f8;  /* Couleur du texte clair */
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);  /* Grille de 10x10 */
+    gap: 3px;
+    border: 2px solid #444;
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.wall {
+    background-color: #555;  /* Mur gris */
+    border: 1px solid #333;
+}
+
+.player {
+    background-color: #4CAF50;  /* Vert pour le joueur */
+    border: 2px solid #2E7D32;
+    border-radius: 50%;
+}
+
+.collectible {
+    background-color: #FFD700;  /* Jaune pour les objets à collecter */
+    border: 2px solid #DAA520;
+    border-radius: 50%;
+}
+
+.exit {
+    background-color: #FF6347;  /* Rouge pour la sortie */
+    border: 2px solid #A52A2A;
+    border-radius: 50%;
+}
